@@ -9,13 +9,16 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script src="http://code.jquery.com/jquery.min.js"></script>
     	<script src="js/app.js" type="text/javascript"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    	<script src="js/jquery.sortable.js"></script>
 
 	</head>
 	<body>
 		<div class="topbox">
 			<h1><span class="glyphicon glyphicon-shopping-cart"></span>Shopping List</h1>
 				<div class="topbutton">
-					<button>Instructions</button>
+					<button id="instructobutton">Instructions</button>
+					<button id="destructobutton">Hide Instructions</button>
 					<p class="instructions">Click and hold green box to reorder list</p>
 					<p class="instructions">Click red X to delete item</p>
 					<p class="instructions">Click item text to cross out</p>
@@ -29,7 +32,7 @@
 		 </div>	<!--enterboxcontainer-->
 
 		 <div class="listitemscontainer">
-		 	<ul class="listul">
+		 	<ul id="listul" class="ui-sortable">
 
 		 		<li class="listitem"> 
 		 			<button class="movegrid"><span class="glyphicon glyphicon-resize-vertical"></span></button>
@@ -64,7 +67,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sortable.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jquery.sortable.js"></script>
 	</body>
 </html>
