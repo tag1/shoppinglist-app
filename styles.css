@@ -93,6 +93,9 @@ html, body {
 	text-align: center;
 	padding-top: 14px;
 }
+.btn-primary {
+	height: 25px;
+}
 .enterbox {
 	text-align: center;
 	border: none;
